@@ -1,1 +1,38 @@
 <!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>피규어와 이미지</title>
+  </head>
+  <body>
+    <h1><img src="./images/webcafe-logo.png" alt="" /></h1>
+    <img src="./images/brochure.png" />
+    <!-- img 태그의 alt="" 속성은 무조건 들어가야함! web developer로 확인 시 error로 뜸
+    img를 브라우저에 출력할 수는 있지만 문자로 설명할 수 없기 때문에 alt의 내용을 참고함 headings map으로 확인 가능
+    alt 속성이 없으면 Screen Reader로 대체 텍스트를 읽을 수 없음(웹 접근성) -->
+
+    <img src="./images/arrow-down.png" alt="" /> 메일
+    <br />
+    <img src="./images/coffee.png" alt="" loading="lazy" />
+    <!-- loading="lazy" 용량이 클 때 후순위로 로딩되게 함-->
+
+    <figure>
+      <img src="./images/likelion-black.png" alt="" />
+      <figcaption>멋쟁이 사자처럼</figcaption>
+    </figure>
+    <!-- 표, 비디오, 사진 밑에 적는 간단한 제목-->
+
+    <figure>
+      <img src="images/rwd.jpg" alt="" />
+      <figcaption>
+        <p>
+          <strong>Responsive Web<br />Design Strategies</strong>
+          <span>반응형 웹디자인 전략</span>
+        </p>
+        <a href="/">강의정보</a>
+      </figcaption>
+    </figure>
+  </body>
+</html>
